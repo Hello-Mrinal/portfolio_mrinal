@@ -2,6 +2,7 @@ const projects = [
   { title: "CMIS - College Management System", desc: "Full MERN stack web app with authentication, fees & marks management." },
   { title: "Gym Management App", desc: "Dashboard-based system for member and trainer management." },
   { title: "Portfolio Website", desc: "Personal portfolio made with React and Tailwind CSS." },
+  { title: "Portfolio Website", desc: "Personal portfolio made with React and Tailwind CSS." },
   { title: "Portfolio Website", desc: "Personal portfolio made with React and Tailwind CSS." }
 ];
 
