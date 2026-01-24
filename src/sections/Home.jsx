@@ -1,18 +1,61 @@
-import profilePic from "../assets/profile.png";
+import profilePic from "../assets/profilepic.jpeg";
 import { FaLinkedin, FaEnvelope } from "react-icons/fa";
+import cv from "../assets/cv.pdf";
 
 export default function Home() {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-20">
-      <div className="flex flex-col md:flex-row items-center md:space-x-12">
-        <img src={profilePic} alt="Profile" className="w-48 h-48 rounded-full border-4 border-gray-600" />
-        <div className="text-center md:text-left mt-6 md:mt-0">
-          <h1 className="text-4xl font-bold">Hi, I’m <span className="text-blue-400">Mrinal</span></h1>
-          <h2 className="text-xl mt-2 text-gray-400">Full Stack Web Developer</h2>
-          <div className="mt-4 space-x-4">
-            <a href="/cv.pdf" download className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Download CV</a>
-            <a href="mailto:yourmail@gmail.com" className="bg-gray-700 px-4 py-2 rounded hover:bg-gray-600 flex items-center inline-flex"><FaEnvelope className="mr-2" />Email</a>
-            <a href="https://linkedin.com" target="_blank" className="bg-blue-700 px-4 py-2 rounded hover:bg-blue-600 flex items-center inline-flex"><FaLinkedin className="mr-2" />LinkedIn</a>
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center pt-24"
+    >
+      <div className="max-w-6xl w-full flex flex-col md:flex-row items-center gap-12 backdrop-blur-md bg-white/5 border border-white/10 rounded-3xl p-10 shadow-2xl  bg-gradient-to-br from-black via-gray-900 to-black px-6">
+
+        {/* Profile Image */}
+        <div className="relative">
+          <div className="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-full blur opacity-30"></div>
+          <img
+            src={profilePic}
+            alt="Profile"
+            className="relative w-48 h-48 rounded-full object-cover border-4 border-white/20 shadow-xl hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+
+        {/* Text Content */}
+        <div className="text-center md:text-left">
+          <h1 className="text-4xl md:text-5xl font-bold text-white">
+            Hi, I’m <span className="bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">Mrinal</span>
+          </h1>
+          <h2 className="text-xl mt-3 text-gray-300">
+            Full Stack Web Developer | MERN Stack Specialist
+          </h2>
+
+          {/* Buttons */}
+          <div className="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
+
+            <a
+              href={cv}
+              download
+              className="px-6 py-3 rounded-full bg-gradient-to-r from-indigo-500 to-pink-500 text-white font-semibold hover:scale-105 transition-transform duration-300 shadow-lg"
+            >
+              Download CV
+            </a>
+
+            <a
+              href="mailto:mrinalkumar913@gmail.com"
+              className="px-6 py-3 rounded-full border border-white/20 text-white hover:bg-white/10 flex items-center gap-2 hover:scale-105 transition-transform duration-300"
+            >
+              <FaEnvelope /> Email
+            </a>
+
+            <a
+              href="https://linkedin.com/in/mrinal-kumar-5694151b8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 rounded-full border border-indigo-400/40 text-indigo-300 hover:bg-indigo-500/10 flex items-center gap-2 hover:scale-105 transition-transform duration-300"
+            >
+              <FaLinkedin /> LinkedIn
+            </a>
+
           </div>
         </div>
       </div>
