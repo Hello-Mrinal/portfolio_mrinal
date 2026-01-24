@@ -1,4 +1,4 @@
-import aboutPic from "../assets/profilepic.jpeg";
+import aboutPic from "../assets/profilepic2.png";
 
 export default function About() {
   return (
@@ -12,7 +12,7 @@ export default function About() {
           {/* Left Content */}
           <div className="flex-1 space-y-6">
             <h2 className="text-4xl font-bold bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">
-              About Me
+              About Mes
             </h2>
 
             <p className="text-gray-300 leading-relaxed text-lg">
@@ -85,7 +85,7 @@ export default function About() {
             <img
               src={aboutPic}
               alt="About"
-              className="relative w-72 h-72 object-cover rounded-2xl border border-white/20 shadow-xl hover:scale-105 transition-transform duration-300"
+              className="relative w-72 h-72 rounded-2xl border border-white/20 shadow-xl hover:scale-105 transition-transform duration-300 flex flex-col justify-start items-center h-96"
             />
           </div>
 
